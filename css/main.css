@@ -1,0 +1,77 @@
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body {font-family: 'Spoqa Han Sans Neo', 'sans-serif'; color: #000; font-size: 16px;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none;}
+
+/* common */
+.container {max-width: 1280px; margin: 0 auto;}
+.inline-flex {display: inline-flex;}
+.justify-space-between {display: flex; justify-content: space-between;}
+.justify-center {display: flex; justify-content: center;}
+.align-center {display: flex; align-items: center;}
+.active {color: #fff; transition: all 0.3s ease-in;}
+
+/* header */
+.header {position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 80px; border-bottom: 1px solid rgba(255,255,255,0.1);}
+.header .logo {display: flex; align-items: center; display: block;}
+.header .logo a {cursor: pointer; display: block;}
+.header .logo img {margin-top: 10px;}
+
+.nav {height: 80px; line-height: 80px;}
+.nav .gnb {display: flex; align-items: center; overflow: hidden;}
+.nav .gnb li {margin-left: 48px;}
+.nav .gnb a {display: block; font-size: 14px; font-weight: bold; color: rgba(255, 255, 255, 0.5);}
+.nav .gnb a:hover {color: #fff; transition: all 0.3s ease-in;}
+
+/* main */
+.main-slide {text-align: center; background: url(../img/img-hero.png)no-repeat center/cover; width: 100%; height: 100vh;}
+.main-slide .title-group {padding-top: 194px;}
+.main-slide .title-group h2 {font-size: 90px; margin-bottom: 20px; color: #ff0a0a; font-weight: bold;}
+.main-slide .title-group p {font-size: 30px; font-weight: bold; color: #fff;}
+.main-slide .title-group span {color: #ff0a0a;}
+.main-slide .stick-bar {width: 2px; height: 40px; background: #fff; display: inline-block; margin: 60px 0;}
+.main-slide .text-group {margin-bottom: 40px;}
+.main-slide .text-group .bg-color-text {display: inline-block;  font-size: 19px; font-weight: bold; color: #fff; margin-bottom: 15px; position: relative; z-index: 1;}
+.main-slide .text-group .bg-color-text::before {content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #101010; width: 115%; height: 32px; z-index: -1;}
+.main-slide .text-group p {font-size: 16px; color: #fff; font-weight: normal; line-height: 1.5;}
+.main-slide .electronic-group {}
+.main-slide .electronic-group .box-wrap {background: rgba(255,255,255,0.05); border-radius: 10px;  border: 1px solid #fff; padding: 28px 20px; width: 304px; height: 160px;}
+.main-slide .electronic-group .box-wrap:not(:last-child) {margin-right: 60px;}
+.main-slide .box-wrap .title {font-size: 26px; font-weight: bold; color: #fff; margin-bottom: 24px;}
+.main-slide .box-wrap .text {font-size: 16px; font-weight: normal; color: #fff;}
+
+.white-box260 {background: #fff; border-radius: 10px; height: 260px; position: relative;}
+.white-box274 {background: #fff; border-radius: 10px; height: 274px; position: relative;}
+.white-box437 {background: #fff; border-radius: 10px; height: 437px; position: relative; width: calc(50% - 10px); margin-top: 20px; padding: 40px;}
+.white-box260.black-chip::after {content: "고객사"; position: absolute; top:-11px; left:50%; transform: translate(-50%); background: #101010; color:#fff; font-size: 14px; text-align: center; border-radius: 10px; padding: 2px 24px;}
+.white-box274.black-chip::after {content: "고객사"; position: absolute; top:-11px; left:50%; transform: translate(-50%); background: #101010; color:#fff; font-size: 14px; text-align: center; border-radius: 10px; padding: 2px 24px;}
+.white-box260.red-chip::after {content: "우체국"; position: absolute; top:-11px; left:50%; transform: translate(-50%); background: #ff0a0a; color:#fff; font-size: 14px; text-align: center; border-radius: 10px; padding: 2px 24px;}
+.white-box274.red-chip::after {content: "우체국"; position: absolute; top:-11px; left:50%; transform: translate(-50%); background: #ff0a0a; color:#fff; font-size: 14px; text-align: center; border-radius: 10px; padding: 2px 24px;}
+
+/* 우체국 전자 우편 서비스 */
+.post-slide {text-align: center; background: #fafafa; padding: 88px 0;}
+.post-slide .post-service {margin-bottom: 90px}
+.post-slide .post-service h3 {font-size: 36px; margin-bottom: 40px}
+.post-slide .post-service h3 span {color: #ff0a0a}
+.post-slide .post-service .p-black {font-size: 20px; color: #101010}
+.post-slide .wrap-client {width: 25%; justify-content: center}
+.post-slide .wrap-post-office {width: calc(75% - 22px);}
+.post-slide .wrap-post-office .wrap-service {width: 33.3%}
+.post-slide .wrap-service img {margin: 54px 0 24px 0;}
+.post-slide .wrap-service h4 {margin-bottom: 16px;}
+
+/* 전저문서 서비스 */
+.service-slide {background: #444; text-align: center; padding: 88px 0;}
+.service-slide .post-service {margin-bottom: 90px}
+.service-slide .post-service h3 {font-size: 36px; margin-bottom: 40px; color: #fff;}
+.service-slide .post-service h3 span {color: #ff0a0a}
+.service-slide .post-service .p-white {font-size: 20px; color: #fff;}
+.service-slide .wrap-client {width: 25%; justify-content: center}
+.service-slide .wrap-post-office {width: calc(75% - 22px);}
+.service-slide .wrap-post-office .wrap-service {width: 33.3%}
+.service-slide .wrap-service img {margin: 54px 0 16px 0;}
+.service-slide .wrap-service h4 {font-size: 20px; margin-bottom: 16px;}
+.service-slide .wrap-service p {color:#444; font-size: 16px; margin-bottom: 10px;}
+.service-slide .wrap-service span {background: #f2f2f2; border-radius: 10px; font-size: 16px; margin-bottom: 10px; padding: 2px 24px}
+.service-slide .doc-certificate h4 {font-weight: 500; font-size: 16px; color: #101010; margin: 16px 0 8px 0}
+.service-slide .doc-certificate p {color: #444;}
