@@ -115,6 +115,7 @@ a {text-decoration: none;}
 
 /* QUPID 주요 고객사 */
 .customer-slide {text-align: center; background: #fafafa; padding: 88px 0;}
+.customer-slide .major-customer {width: 232px; height: 62px; margin-left: 24px; background: #fff; padding: 12px 0;}
 
 /* Footer */
 #footer {background: #444; padding: 40px 0 80px 0;}
