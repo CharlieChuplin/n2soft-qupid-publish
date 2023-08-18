@@ -64,16 +64,6 @@ a {text-decoration: none;}
 .post-slide .wrap-post-office .wrap-service {width: 33.3%}
 .post-slide .wrap-service img {margin: 54px 0 24px 0;}
 .post-slide .wrap-service h4 {margin-bottom: 16px;}
-/*@keyframes slideUp {*/
-/*    0% {*/
-/*        transform: translateY(50px);*/
-/*        opacity: 0;*/
-/*    }*/
-/*    100% {*/
-/*        transform: translateY(0);*/
-/*        opacity: 1;*/
-/*    }*/
-/*}*/
 
 .slide-up-animation {
     opacity: 0;
@@ -96,29 +86,27 @@ a {text-decoration: none;}
 .service-slide .doc-certificate p {color: #444;}
 
 /* QUPID PROCESS */
-.process-slide {text-align: center; background: #fafafa; padding: 88px 0 8px 0;}
-.process-slide .slide-side-grid {flex-basis: 170px; position: relative;}
-.process-slide .slide-side-grid .customer-circle {position: absolute; top: 25%; width:170px; height:170px; background-color: #101010; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.25); color: #fff; border-radius: 50%; font-weight: bold; font-size: 20px; padding: 72px 0;}
-.process-slide .slide-side-grid-line {flex-basis: 86px; position: relative;}
-.process-slide .slide-side-grid-line .curve-line-img {position: absolute; top: 15%;}
-.process-slide .slide-side-grid-line img {padding: 4px;}
-.process-slide .service-process {flex-grow: 1; display: flex; flex-direction: column; height: 500px;}
-.process-slide .service-process .service-process-block {flex-basis: 50%; display: flex; position: relative; z-index: 1; }
-.process-slide .service-process .service-process-block .service-process-circle {height: 170px; width: 170px; background: #ff0a0a; border-radius: 50%; font-size: 20px; color: #fff; font-weight: bold; padding: 72px 0; margin: 0 20px; position: relative}
-.process-slide .service-process .service-process-block .service-process-circle::after {content: ""; height: 170px; width: 190px; top: 0%; right: -95px; background: #e7e7e7; position: absolute; z-index: -1;}
-.process-slide .service-process .service-process-block .service-process-first-step {height: 170px; width: 170px; background: #e7e7e7; border-radius: 30%; margin-right: 20px;}
-.process-slide .service-process .service-process-block .service-process-first-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #fff; z-index: 1; position: relative; z-index: 1;}
-.process-slide .service-process .service-process-block .service-process-first-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; position: relative; z-index: 1;}
-.process-slide .service-process .service-process-block .service-process-first-step .step:after {content: ""; height: 170px; width: 170px; background: #e7e7e7; border-radius: 50%; top: 0%; right: -40px; position: absolute; z-index: -1}
-.process-slide .service-process .service-process-block .service-process-second-step {height: 170px; width: 170px; background: #fff; margin-right: 20px; position: relative;}
-.process-slide .service-process .service-process-block .service-process-second-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #e7e7e7; z-index: 1}
-.process-slide .service-process .service-process-block .service-process-second-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; position: relative; z-index: 1;}
-.process-slide .service-process .service-process-block .service-process-second-step::before {content: ""; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; background: #fff; z-index: -1;}
-.process-slide .service-process .service-process-block .service-process-step {height: 170px; width: 170px; background: #fff; margin-right: 20px; position: relative;}
-.process-slide .service-process .service-process-block .service-process-step::before {content: ""; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; background: #fff; z-index: -1;}
-.process-slide .service-process .service-process-block .service-process-step::after {content: "------"; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; padding-top: 30px; color: #e7e7e7}
-.process-slide .service-process .service-process-block .service-process-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #e7e7e7; z-index: 1;}
-.process-slide .service-process .service-process-block .service-process-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; }
+.process-slide {text-align: center; background: #fafafa; padding: 88px 0 88px 0;}
+.process-slide .process-item {display: flex; height: 420px; align-items: center;}
+.process-slide .process-item .customer-circle {width:170px; background-color: #101010; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.25); color: #fff; border-radius: 50%; font-weight: bold; font-size: 20px; padding: 72px 0;text-align: center; align-items: center;}
+.process-slide .process-item .curve-line-img{width: 86px; height: 254px; margin: 0 8px;display: flex; flex-wrap: wrap; align-items: center}
+.process-slide .process-item .service-process {display: flex; flex-wrap: wrap; height: 420px;}
+.process-slide .process-item .service-process .service-process-block {display: flex; position: relative; z-index: 1; margin-bottom: 80px;}
+.process-slide .process-item .service-process .service-process-block .service-process-circle {height: 170px; width: 170px; background: #ff0a0a; border-radius: 50%; font-size: 20px; color: #fff; font-weight: bold; padding: 72px 0; position: relative}
+.process-slide .process-item .service-process .service-process-block .service-process-circle::after {content: ""; height: 170px; width: 190px; top: 0%; right: -95px; background: #e7e7e7; position: absolute; z-index: -1;}
+.process-slide .process-item .service-process .service-process-block .service-process-first-step {height: 170px; width: 170px; background: #e7e7e7; border-radius: 30%; margin-right: 20px;}
+.process-slide .process-item .service-process .service-process-block .service-process-first-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #fff; z-index: 1; position: relative; z-index: 1;}
+.process-slide .process-item .service-process .service-process-block .service-process-first-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; position: relative; z-index: 1;}
+.process-slide .process-item .service-process .service-process-block .service-process-first-step .step:after {content: ""; height: 170px; width: 170px; background: #e7e7e7; border-radius: 50%; top: 0%; right: -40px; position: absolute; z-index: -1}
+.process-slide .process-item .service-process .service-process-block .service-process-second-step {height: 170px; width: 170px; background: #fff; margin-right: 20px; position: relative;}
+.process-slide .process-item .service-process .service-process-block .service-process-second-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #e7e7e7; z-index: 1}
+.process-slide .process-item .service-process .service-process-block .service-process-second-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; position: relative; z-index: 1;}
+.process-slide .process-item .service-process .service-process-block .service-process-second-step::before {content: ""; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; background: #fff; z-index: -1;}
+.process-slide .process-item .service-process .service-process-block .service-process-step {height: 170px; width: 170px; background: #fff; margin-right: 20px; position: relative;}
+.process-slide .process-item .service-process .service-process-block .service-process-step::before {content: ""; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; background: #fff; z-index: -1;}
+.process-slide .process-item .service-process .service-process-block .service-process-step::after {content: "------"; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; padding-top: 30px; color: #e7e7e7}
+.process-slide .process-item .service-process .service-process-block .service-process-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #e7e7e7; z-index: 1;}
+.process-slide .process-item .service-process .service-process-block .service-process-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; }
 .half-circle {height: 170px; width: 170px; border-radius: 50%; background: #fff; left: 86%; position: absolute; z-index: -1;}
 
 /* QUPID 기대효과 */
@@ -147,6 +135,7 @@ a {text-decoration: none;}
 
 /* QUPID 고객문의*/
 .inquiry-slide {text-align: center; padding: 88px 0;}
+.inquiry-slide .service-title {margin-bottom: 60px;}
 .inquiry-slide .input-form {display: flex; flex-wrap: wrap; text-align: left}
 .inquiry-slide .input-form .input-item {margin-bottom: 30px;}
 .inquiry-slide .input-form .input-item p {padding-bottom: 10px;}
@@ -165,3 +154,4 @@ a {text-decoration: none;}
 #footer .dept-contact {width: 870px; justify-content: space-between; display: flex;}
 #footer .dept-contact .dept-leader {width: 274px; height: 112px; text-align: left; padding: 16px 32px; background: rgba(255,255,255,0.04); margin-top: 21px;}
 #footer .dept-contact .dept-leader .leader-name {font-weight: bold; padding-bottom: 8px;}
+

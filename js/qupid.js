@@ -4,6 +4,7 @@
     const $menu = $('#header');
     const menuHeight = $menu.outerHeight();
     const $logo = $("#logo");
+    const $elementsToAnimate = $('.animate-on-scroll'); /*애니메이션*/
 
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > menuHeight) {
@@ -13,7 +14,7 @@
             $menu.removeClass('scrolled');
             $logo.attr('src', 'img/logo-qupid.png');
         }
-    });
+});
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {

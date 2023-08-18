@@ -11,8 +11,10 @@
 
   <!-- Theme CSS -->
   <link href="css/qupid.css" rel="stylesheet">
-  <!-- font css-->
+  <!-- font CSS -->
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- animation CSS-->
+  <link rel="stylesheet" href="css/animations.css">
 
   <!-- 기존 엔투소프트-->
   <!-- Bootstrap Core CSS -->
@@ -82,15 +84,14 @@
   </div>
 </section>
 
-
 <!--우체국 전자 우편 서비스-->
-<section class="post-slide"  id="service">
+<section class="post-slide" id="service">
   <div class="container">
     <div class="service-title">
       <h3 class="h3-black"><span>우체국 전자우편 서비스</span>란?</h3>
       <p class="p-black">고객이 발송할 우편물의 내용을 PDF형태로 접수하면 우편물 제작에서 배달까지 진행되는 ONE-STEP 우편 서비스</p>
     </div>
-    <div class="justify-space-between animate-on-scroll">
+    <div class="justify-space-between" id="post-slideUp">
       <div class="white-box260 wrap-client inline-flex black-chip">
         <div class="wrap-service">
           <img src="/img/ico-A01.png">
@@ -126,44 +127,46 @@
       <h3 class="h3-white"><span>전자문자 서비스</span>란?</h3>
       <p class="p-white">등기 및 내용 증명을 모바일로 전송하는 서비스</p>
     </div>
-    <div class="justify-space-between">
-      <div class="white-box274 wrap-client inline-flex black-chip">
-        <div class="wrap-service">
-          <img src="/img/ico-B01.png">
-          <h4>문서생성</h4>
-          <p>개인/기업/기관</p>
+    <div id="doc-slideUp">
+      <div class="justify-space-between">
+        <div class="white-box274 wrap-client inline-flex black-chip">
+          <div class="wrap-service">
+            <img src="/img/ico-B01.png">
+            <h4>문서생성</h4>
+            <p>개인/기업/기관</p>
+          </div>
+        </div>
+        <div class="white-box274 wrap-post-office inline-flex red-chip">
+          <div class="wrap-service">
+            <img src="img/ico-B02.png"/>
+            <h4>문서유통</h4>
+            <p>공인전자문서 중계자</p>
+            <span class="grey-chip">* TSA 시점확인</span>
+          </div>
+          <div class="wrap-service">
+            <img src="img/ico-B03.png"/>
+            <h4>수신자 본인인증 후 열람</h4>
+            <p>카카오 페이 인증</p>
+          </div>
+          <div class="wrap-service">
+            <img src="img/ico-B04.png"/>
+            <h4>문서보관</h4>
+            <p>공인전자문서센터</p>
+            <span class="grey-chip">* 10년 보관</span>
+          </div>
         </div>
       </div>
-      <div class="white-box274 wrap-post-office inline-flex red-chip">
-        <div class="wrap-service">
-          <img src="img/ico-B02.png"/>
-          <h4>문서유통</h4>
-          <p>공인전자문서 중계자</p>
-          <span class="grey-chip">* TSA 시점확인</span>
+      <div class="justify-space-between">
+        <div class="white-box437 doc-certificate">
+          <img src="img/img-doc01.png">
+          <h4>전자문서 유통증명서</h4>
+          <p>(송·수신/열람이력 증빙)</p>
         </div>
-        <div class="wrap-service">
-          <img src="img/ico-B03.png"/>
-          <h4>수신자 본인인증 후 열람</h4>
-          <p>카카오 페이 인증</p>
+        <div class="white-box437 doc-certificate">
+          <img src="img/img-doc02.png">
+          <h4>전자문서 증명서</h4>
+          <p>(원본 진위여부 증빙)</p>
         </div>
-        <div class="wrap-service">
-          <img src="img/ico-B04.png"/>
-          <h4>문서보관</h4>
-          <p>공인전자문서센터</p>
-          <span class="grey-chip">* 10년 보관</span>
-        </div>
-      </div>
-    </div>
-    <div class="justify-space-between">
-      <div class="white-box437 doc-certificate">
-        <img src="img/img-doc01.png">
-        <h4>전자문서 유통증명서</h4>
-        <p>(송·수신/열람이력 증빙)</p>
-      </div>
-      <div class="white-box437 doc-certificate">
-        <img src="img/img-doc02.png">
-        <h4>전자문서 증명서</h4>
-        <p>(원본 진위여부 증빙)</p>
       </div>
     </div>
   </div>
@@ -176,60 +179,60 @@
       <h3 class="h3-black"><span>QUPID </span>PROCESS</h3>
       <p class="p-black">전자우편 or 전자문서 선택 가능</p>
     </div>
-
     <div class="justify-center">
-      <div class="slide-side-grid">
+      <div class="process-item align-center">
         <div class="customer-circle">고객사</div>
       </div>
-      <div class="slide-side-grid-line">
-        <div class="curve-line-img">
-          <img src="img/line02.png">
-          <img src="img/line01.png">
+        <div class="process-item fadeIn" id>
+          <div class="curve-line-img">
+            <img src="img/line02.png">
+            <img src="img/line01.png">
+          </div>
         </div>
-      </div>
-      <div class="service-process">
-        <div class="service-process-block">
-          <div class="service-process-circle">전자우편</div>
-          <div class="service-process-first-step">
-            <p class="step">STEP 01</p>
-            <p class="step-desc">온라인으로<br/>우편물 발행 요청</p>
+        <div class="process-item">
+          <div class="service-process fadeIn"  >
+            <div class="service-process-block">
+              <div class="service-process-circle">전자우편</div>
+              <div class="service-process-first-step">
+                <p class="step">STEP 01</p>
+                <p class="step-desc">온라인으로<br/>우편물 발행 요청</p>
+              </div>
+              <div class="service-process-second-step">
+                <p class="step">STEP 02</p>
+                <p class="step-desc">출력 및 제작</p>
+              </div>
+              <div class="service-process-step">
+                <p class="step">STEP 03</p>
+                <p class="step-desc">우체국 배달</p>
+              </div>
+              <div class="service-process-step">
+                <p class="step">STEP 04</p>
+                <p class="step-desc">배송현황<br/>실시간 조회 가능</p>
+              </div>
+              <div class="half-circle"></div>
+            </div>
+            <div class="service-process-block">
+              <div class="service-process-circle">전자문서</div>
+              <div class="service-process-first-step">
+                <p class="step">STEP 01</p>
+                <p class="step-desc">문서생성</p>
+              </div>
+              <div class="service-process-second-step">
+                <p class="step">STEP 02</p>
+                <p class="step-desc">카카오 or 문자<br/>전자문서 전달</p>
+              </div>
+              <div class="service-process-step">
+                <p class="step">STEP 03</p>
+                <p class="step-desc">고객확인</p>
+              </div>
+              <div class="service-process-step">
+                <p class="step">STEP 04</p>
+                <p class="step-desc">수신확인<br/>실시간 조회 가능</p>
+              </div>
+              <div class="half-circle"></div>
+            </div>
           </div>
-          <div class="service-process-second-step">
-            <p class="step">STEP 02</p>
-            <p class="step-desc">출력 및 제작</p>
-          </div>
-          <div class="service-process-step">
-            <p class="step">STEP 03</p>
-            <p class="step-desc">우체국 배달</p>
-          </div>
-          <div class="service-process-step">
-            <p class="step">STEP 04</p>
-            <p class="step-desc">배송현황<br/>실시간 조회 가능</p>
-          </div>
-          <div class="half-circle"></div>
         </div>
-        <div class="service-process-block">
-          <div class="service-process-circle">전자문서</div>
-          <div class="service-process-first-step">
-            <p class="step">STEP 01</p>
-            <p class="step-desc">문서생성</p>
-          </div>
-          <div class="service-process-second-step">
-            <p class="step">STEP 02</p>
-            <p class="step-desc">카카오 or 문자<br/>전자문서 전달</p>
-          </div>
-          <div class="service-process-step">
-            <p class="step">STEP 03</p>
-            <p class="step-desc">고객확인</p>
-          </div>
-          <div class="service-process-step">
-            <p class="step">STEP 04</p>
-            <p class="step-desc">수신확인<br/>실시간 조회 가능</p>
-          </div>
-          <div class="half-circle"></div>
-        </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -355,26 +358,26 @@
     <div class="service-title">
       <h3 class="h3-black"><span>QUPID </span>고객 문의</h3>
     </div>
-    <form class="input-form justify-space-between" >
+    <form class="input-form justify-space-between" action="#">
       <div class="input-item">
         <p>성함<span> *</span></p>
-        <input/>
+        <input name="name"/>
       </div>
       <div class="input-item">
         <p>회사명<span> *</span></p>
-        <input/>
+        <input name="company"/>
       </div>
       <div class="input-item">
         <p>이메일 주소<span> *</span></p>
-        <input/>
+        <input name="email"/>
       </div>
       <div class="input-item">
         <p>전화번호<span> *</span></p>
-        <input/>
+        <input name="tel"/>
       </div>
       <div class="input-item">
         <p>남기실 말씀<span> *</span></p>
-        <textarea></textarea>
+        <textarea name="tell-us"></textarea>
       </div>
     </form>
     <button type="submit">문의하기</button>
@@ -405,12 +408,17 @@
       </div>
       <div class="dept-leader">
         <p class="leader-name">최현빈 매니저 (영업부)</p>
-        <p>TEL : 9744-6869</p>
+        <p>TEL : 010-9744-6869</p>
         <p>MAIL: hbchoi@n2soft.co.kr</p>
       </div>
     </div>
   </div>
 </footer>
+<div class="asdasd">
+  <div class="a1">가나다</div>
+  <div class="a1">가나다</div>
+</div>
+
 
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>
@@ -420,10 +428,41 @@
 
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 <!-- Theme JavaScript -->
 <script src="js/qupid.js"></script>
 </body>
+
+
+<script>
+  $(window).scroll(function() {
+    var topOfWindow = $(window).scrollTop(); // 현재 스크롤 위치
+    var windowHeight = $(window).height();  // 브라우저 창의 높이
+    var documentHeight = $(document).height(); // 전체 문서의 높이
+
+    if (topOfWindow + windowHeight >= 1024) {
+      $('#post-slideUp').addClass("slideUp");
+    }
+    if ((topOfWindow + windowHeight >= 1843) || topOfWindow + windowHeight <= 1546) {
+      $('#post-slideUp').removeClass("slideUp");
+    }
+    if (topOfWindow + windowHeight >= 1843) {
+      $('#doc-slideUp').addClass("slideUp");
+    }
+    if (topOfWindow + windowHeight >= 2862 || topOfWindow + windowHeight <= 1546) {
+      $('#doc-slideUp').removeClass("slideUp");
+    }
+    if (topOfWindow + windowHeight >= 1843) {
+      $('#process-animation').addClass("pullUp");
+    }
+    if (topOfWindow + windowHeight >= 2862 || topOfWindow + windowHeight <= 1546) {
+      $('#process-animation').removeClass("pullUp");
+    }
+
+  });
+
+</script>
 </html>
