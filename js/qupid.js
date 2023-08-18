@@ -4,7 +4,6 @@
     const $menu = $('#header');
     const menuHeight = $menu.outerHeight();
     const $logo = $("#logo");
-    const $elementsToAnimate = $('.animate-on-scroll'); /*애니메이션*/
 
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > menuHeight) {
@@ -15,17 +14,6 @@
             $logo.attr('src', 'img/logo-qupid.png');
         }
     });
-
-    // function checkElementsInView() {
-    //     $elementsToAnimate.each(function() {
-    //         const positionFromTop = $(this).offset().top - $(window).scrollTop();
-    //
-    //         if (positionFromTop <= $(window).height() && positionFromTop + $(this).height() >= 0) {
-    //             $(this).addClass('slide-up-animation');
-    //         }
-    //     });
-    // }
-    // $(document).ready(checkElementsInView);
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
