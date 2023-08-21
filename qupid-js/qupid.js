@@ -9,10 +9,10 @@
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > menuHeight) {
             $menu.addClass('scrolled');
-            $logo.attr('src', 'img/logo-qupid-bk.png');
+            $logo.attr('src', '/qupid-imgs/logo-qupid-bk.png');
         } else {
             $menu.removeClass('scrolled');
-            $logo.attr('src', 'img/logo-qupid.png');
+            $logo.attr('src', '/qupid-imgs/logo-qupid.png');
         }
 });
 

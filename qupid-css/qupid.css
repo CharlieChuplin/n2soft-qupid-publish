@@ -41,7 +41,7 @@ a {text-decoration: none;}
 .nav .gnb a:hover {color: #fff; transition: all 0.3s ease-in;}
 
 /* main */
-.main-slide {text-align: center; background: url(../img/img-hero.png)no-repeat center/cover; width: 100%; height: 100vh;}
+.main-slide {text-align: center; background: url(/qupid-imgs/img-hero.png)no-repeat center/cover; width: 100%; height: 100vh;}
 /* 홈페이지 접속 시 히어로 이미지 상 -> 하 생성 */
 .main-slide .title-group {padding-top: 94px;}
 .main-slide .title-group h2 {font-size: 90px; margin-bottom: 20px; color: #ff0a0a; font-weight: bold;}
@@ -89,7 +89,7 @@ a {text-decoration: none;}
 .process-slide {text-align: center; background: #fafafa; padding: 88px 0 88px 0;}
 .process-slide .process-item {display: flex; height: 420px; align-items: center;}
 .process-slide .process-item .customer-circle {width:170px; background-color: #101010; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.25); color: #fff; border-radius: 50%; font-weight: bold; font-size: 20px; padding: 72px 0;text-align: center; align-items: center;}
-.process-slide .process-item .curve-line-img{width: 86px; height: 254px; margin: 0 8px;display: flex; flex-wrap: wrap; align-items: center}
+.process-slide .process-item .curve-line-img {width: 86px; height: 254px; margin: 0 8px;display: flex; flex-wrap: wrap; align-items: center; position: relative; overflow: hidden;}
 .process-slide .process-item .service-process {display: flex; flex-wrap: wrap; height: 420px;}
 .process-slide .process-item .service-process .service-process-block {display: flex; position: relative; z-index: 1; margin-bottom: 80px;}
 .process-slide .process-item .service-process .service-process-block .service-process-circle {height: 170px; width: 170px; background: #ff0a0a; border-radius: 50%; font-size: 20px; color: #fff; font-weight: bold; padding: 72px 0; position: relative}
@@ -110,7 +110,7 @@ a {text-decoration: none;}
 .half-circle {height: 170px; width: 170px; border-radius: 50%; background: #fff; left: 86%; position: absolute; z-index: -1;}
 
 /* QUPID 기대효과 */
-.effect-slide {text-align: center; background: url(/img/img-effect.png); padding: 88px 0; height: 921px;}
+.effect-slide {text-align: center; background: url(/qupid-imgs/img-effect.png); padding: 88px 0; height: 921px;}
 .effect-slide .effect-box {width: 238px; height: 268px; border-radius: 30px; box-shadow: 1px 4px 12px 0 rgba(0, 0, 0, 0.8); background-color: rgba(255, 255, 255, 0.6); margin: 0 10px;}
 .effect-slide .effect-box h3 {text-align: left; padding: 24px;  font-family: Helvetica; font-size: 70px; font-weight: bold; font-style: oblique; color: #ff0a0a;}
 .effect-slide .effect-box p {text-align: left; padding:0 35px; font-size: 16px; line-height: 20px;}
@@ -122,16 +122,18 @@ a {text-decoration: none;}
 .effect-slide .effect-circle p {font-size: 20px; font-weight: bold; padding-top: 55px;}
 
 /* QUPID 주요활용사례 */
-.ex-slide {text-align: center; padding: 88px 0; background: linear-gradient(to right, transparent 400px, rgba(16, 16, 16, 0.05) 400px, rgba(16, 16, 16, 0.05) 401px,  /* 1px 너비의 세로줄 */ transparent 401px, transparent 750px, rgba(16, 16, 16, 0.05) 750px, rgba(16, 16, 16, 0.05) 751px, transparent 751px, transparent 1170px, rgba(16, 16, 16, 0.05) 1170px, rgba(16, 16, 16, 0.05) 1171px, transparent 1171px, transparent 1520px, rgba(16, 16, 16, 0.05) 1520px, rgba(16, 16, 16, 0.05) 1521px, transparent 1521px);}
+.ex-slide {text-align: center; padding: 88px 0; background: linear-gradient(to right, transparent 398px, rgba(16, 16, 16, 0.05) 398px, rgba(16, 16, 16, 0.05) 399px, transparent 399px, transparent 743px, rgba(16, 16, 16, 0.05) 743px, rgba(16, 16, 16, 0.05) 744px, transparent 744px,transparent 1157px, rgba(16, 16, 16, 0.05) 1157px, rgba(16, 16, 16, 0.05) 1158px, transparent 1158px, transparent 1502px, rgba(16, 16, 16, 0.05) 1502px, rgba(16, 16, 16, 0.05) 1503px, transparent 1503px); }
 .ex-slide .ex-box {display: flex; padding-bottom: 120px;}
 .ex-slide .ex-box .ex-desc {margin: 110px 0 0 128px; text-align: left;}
-.ex-slide .ex-box .ex-desc-reverse {margin: 110px 0 0 80px; text-align: left;}
+.ex-slide .ex-box .ex-desc-reverse {margin: 110px 0 0 40px; text-align: left;}
 .ex-slide .ex-box .img-reverse {margin-left: auto;}
 .ex-slide  h4 {font-size: 24px; font-weight: bold; padding-bottom: 60px}
 
 /* QUPID 주요 고객사 */
 .customer-slide {text-align: center; background: #fafafa; padding: 88px 0;}
-.customer-slide .major-customer {width: 232px; height: 62px; margin-left: 24px; background: #fff; padding: 12px 0;}
+.customer-slide .wrap-customer {position: relative; width: 1280px; height: 64px; margin:0 auto; padding:0; overflow: hidden;}
+.customer-slide ul {position: absolute;}
+.customer-slide li {float: left; width: 232px; height: 62px; margin-left: 24px; background: #fff; padding: 12px 0;}
 
 /* QUPID 고객문의*/
 .inquiry-slide {text-align: center; padding: 88px 0;}
@@ -154,4 +156,87 @@ a {text-decoration: none;}
 #footer .dept-contact {width: 870px; justify-content: space-between; display: flex;}
 #footer .dept-contact .dept-leader {width: 274px; height: 112px; text-align: left; padding: 16px 32px; background: rgba(255,255,255,0.04); margin-top: 21px;}
 #footer .dept-contact .dept-leader .leader-name {font-weight: bold; padding-bottom: 8px;}
+
+.slideUp{
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes slideUp {
+    0% {transform: translateY(20%);}
+    100% {transform: translateY(0%);}
+}
+.slideLeft{
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes slideLeft {
+    0% {transform: translateX(-20%);}
+    100% {transform: translateY(0%);}
+}
+.slideRight{
+    animation-name: slideRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes slideRight {
+    0% {transform: translateX(20%);}
+    100% {transform: translateY(0%);}
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    animation-delay: 0.8s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.centerOut {
+    animation: centerOut 2s forwards;
+    transform: translateX(0%);
+}
+@keyframes centerOut {
+    0% {
+        clip-path: inset(50% 90%);
+    }
+
+    100% {
+        clip-path: inset(0 0);
+    }
+}
+
+.wipe-left {
+    animation: wipe-left 1s forwards;
+}
+@keyframes wipe-left {
+    0% {
+        clip-path: inset(0% 0% 0% 100%);
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0 0);
+        opacity: 1;
+    }
+}
+.wipe-right {
+    animation: wipe-right 1s forwards;
+}
+@keyframes wipe-right {
+    0% {
+        clip-path: inset(0% 100% 0% 0%);
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0 0);
+        opacity: 1;
+    }
+}
 
