@@ -81,7 +81,7 @@
     }
 }
 .wipeDown {
-    animation: wipeDown 1s forwards;
+    animation: wipeDown 2s forwards;
 }
 @keyframes wipeDown {
     0% {
@@ -99,11 +99,20 @@
 .delay1s {
     animation-delay: 1s;
 }
+.delay125s {
+    animation-delay: 1.25s;
+}
 .delay15s {
     animation-delay: 1.5s;
 }
+.delay175s {
+    animation-delay: 1.75s;
+}
 .delay2s {
     animation-delay: 2s;
+}
+.delay225s {
+    animation-delay: 2.25s;
 }
 .delay25s {
     animation-delay: 2.5s;

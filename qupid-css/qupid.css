@@ -9,7 +9,6 @@ a {text-decoration: none;}
 .justify-space-between {display: flex; justify-content: space-between;}
 .justify-center {display: flex; justify-content: center;}
 .align-center {display: flex; align-items: center;}
-/*.scrolled {color: #fff; transition: all 0.3s ease-in;}*/
 
 .service-title {margin-bottom: 80px}
 .service-title .h3-white {font-size: 36px; margin-bottom: 40px; color: #fff; font-weight: bold}
