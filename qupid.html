@@ -11,6 +11,8 @@
 
   <!-- Theme CSS -->
   <link href="qupid-css/qupid.css" rel="stylesheet">
+  <!-- animation CSS-->
+  <link href="qupid-css/animations.css" rel="stylesheet">
   <!-- font CSS -->
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
 
@@ -63,7 +65,7 @@
       <h2>QUPID SERVICE</h2>
       <p><span>QU</span>ick <span>P</span>ost service for d<span>I</span>gital <span>D</span>ocument</p>
     </div>
-    <span class="stick-bar"></span>
+    <span class="stick-bar wipeDown"></span>
     <div class="text-group">
       <h3 class="bg-color-text">모든 우편물을 원클릭으로 발송하는 서비스</h3>
       <p>고객이 원하는 형태로 선택하여 전자문서 or 전자우편으로 발송</p>
@@ -189,45 +191,70 @@
       </div>
       <div class="process-item">
         <div class="service-process ">
-          <div class="service-process-block" id="service-process-block1">
-            <div class="service-process-circle">전자우편</div>
+
+          <div class="service-process-block">
+            <div class="service-process-circle">
+              <p>전자우편</p>
+            </div>
             <div class="service-process-first-step">
-              <p class="step">STEP 01</p>
-              <p class="step-desc">온라인으로<br/>우편물 발행 요청</p>
+              <div class="step-wrap">
+                <p class="step">STEP 01</p>
+                <p class="step-desc">온라인으로<br/>우편물 발행 요청</p>
+              </div>
             </div>
-            <div class="service-process-second-step">
-              <p class="step">STEP 02</p>
-              <p class="step-desc">출력 및 제작</p>
+            <div class="service-process-step-wrap">
+              <div class="service-process-step" id="second-step1">
+                <div class="step-wrap">
+                  <p class="step">STEP 02</p>
+                  <p class="step-desc">출력 및 제작</p>
+                </div>
+              </div>
+              <div class="service-process-step" id="third-step1">
+                <div class="step-wrap">
+                  <p class="step">STEP 03</p>
+                  <p class="step-desc">우체국 배달</p>
+                </div>
+              </div>
+              <div class="service-process-step" id="last-step1">
+                <div class="step-wrap">
+                  <p class="step">STEP 04</p>
+                  <p class="step-desc">배송현황<br/>실시간 조회 가능</p>
+                </div>
+              </div>
             </div>
-            <div class="service-process-step">
-              <p class="step">STEP 03</p>
-              <p class="step-desc">우체국 배달</p>
-            </div>
-            <div class="service-process-step">
-              <p class="step">STEP 04</p>
-              <p class="step-desc">배송현황<br/>실시간 조회 가능</p>
-            </div>
-            <div class="half-circle"></div>
           </div>
-          <div class="service-process-block" id="service-process-block2">
-            <div class="service-process-circle">전자문서</div>
+
+
+          <div class="service-process-block">
+            <div class="service-process-circle">
+              <p>전자문서</p>
+            </div>
             <div class="service-process-first-step">
-              <p class="step">STEP 01</p>
-              <p class="step-desc">문서생성</p>
+              <div class="step-wrap">
+                <p class="step">STEP 01</p>
+                <p class="step-desc">문서생성</p>
+              </div>
             </div>
-            <div class="service-process-second-step">
-              <p class="step">STEP 02</p>
-              <p class="step-desc">카카오 or 문자<br/>전자문서 전달</p>
+            <div class="service-process-step-wrap">
+              <div class="service-process-step" id="second-step2">
+                <div class="step-wrap">
+                  <p class="step">STEP 02</p>
+                  <p class="step-desc">카카오 or 문자<br/>전자문서 전달</p>
+                </div>
+              </div>
+              <div class="service-process-step" id="third-step2">
+                <div class="step-wrap">
+                  <p class="step">STEP 03</p>
+                  <p class="step-desc">고객확인</p>
+                </div>
+              </div>
+              <div class="service-process-step" id="last-step2">
+                <div class="step-wrap">
+                  <p class="step">STEP 04</p>
+                  <p class="step-desc">수신확인<br/>실시간 조회 가능</p>
+                </div>
+              </div>
             </div>
-            <div class="service-process-step">
-              <p class="step">STEP 03</p>
-              <p class="step-desc">고객확인</p>
-            </div>
-            <div class="service-process-step">
-              <p class="step">STEP 04</p>
-              <p class="step-desc">수신확인<br/>실시간 조회 가능</p>
-            </div>
-            <div class="half-circle"></div>
           </div>
         </div>
       </div>
@@ -296,39 +323,39 @@
       <h3 class="h3-black"><span>QUPID </span>주요 활용 사례</h3>
     </div>
     <div class="ex-box">
-      <img src="qupid-imgs/img-ex01.png" id="ex-img1">
-      <div class="ex-desc" id="ex-desc1">
+      <img src="qupid-imgs/img-ex01.png" class="img-right">
+      <div class="ex-desc">
         <h4>우편</h4>
         <p>종이우편 → 전자우편</p>
         <p>어디서나 편리하게 전자 문서를 활용</p>
       </div>
     </div>
     <div class="ex-box">
-      <div class="ex-desc-reverse" id="ex-desc2">
+      <div class="ex-desc-reverse">
         <h4>내용증명</h4>
         <p>우체국 직접 방문없이 접수가능</p>
         <p>금융기관 인력낭비 최소화하여 효율적인 업무운용</p>
       </div>
       <div class="img-reverse">
-        <img src="qupid-imgs/img-ex02.png" id="ex-img2">
+        <img src="qupid-imgs/img-ex02.png" class="img-left">
       </div>
     </div>
     <div class="ex-box">
-      <img src="qupid-imgs/img-ex03.png" id="ex-img3">
-      <div class="ex-desc" id="ex-desc3">
+      <img src="qupid-imgs/img-ex03.png" class="img-right">
+      <div class="ex-desc" id="ex-desc">
         <h4>보관</h4>
         <p>종이보관 → 전자보관</p>
         <p>전자문서를 안전하게 보관하고 문서의 무결성 또한 보장</p>
       </div>
     </div>
     <div class="ex-box">
-      <div class="ex-desc-reverse" id="ex-desc4">
+      <div class="ex-desc-reverse">
         <h4>고지서</h4>
         <p>종이고지서 → 모바일고지서</p>
         <p>카카오톡, SMS 등으로 본인 명의 스마트폰으로 송달</p>
       </div>
       <div class="img-reverse">
-        <img src="qupid-imgs/img-ex04.png" id="ex-img4">
+        <img src="qupid-imgs/img-ex04.png" class="img-left">
       </div>
     </div>
   </div>
@@ -430,169 +457,4 @@
 <!-- Theme JavaScript -->
 <script src="qupid-js/qupid.js"></script>
 </body>
-
-
-<script>
-  $(window).scroll(function() {
-    var topOfWindow = $(window).scrollTop(); // 현재 스크롤 위치
-    var windowHeight = $(window).height();  // 브라우저 창의 높이
-    var documentHeight = $(document).height(); // 전체 문서의 높이
-
-    if (topOfWindow + windowHeight >= 900) {
-      $('#post-slideUp').addClass("slideUp");
-    }
-    if ((topOfWindow + windowHeight >= 2662) || topOfWindow + windowHeight <= 950) {
-      $('#post-slideUp').removeClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 1546) {
-      $('#doc-slideUp').addClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 4500 || topOfWindow + windowHeight <= 1546) {
-      $('#doc-slideUp').removeClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 2662) {
-      $('#curve-line-img').addClass("wipe-right");
-      $('#service-process-block1').addClass("fadeIn");
-      $('#service-process-block2').addClass("fadeIn");
-    }
-    if (topOfWindow + windowHeight >= 4200 || topOfWindow + windowHeight <= 2600) {
-      $('#curve-line-img').removeClass("wipe-right");
-      $('#service-process-block1').removeClass("fadeIn");
-      $('#service-process-block2').removeClass("fadeIn");
-    }
-    if (topOfWindow + windowHeight >= 3900) {
-      $('#centerOut').addClass("centerOut");
-    }
-    if (topOfWindow + windowHeight >= 5200 || topOfWindow + windowHeight <= 3500) {
-      $('#centerOut').removeClass("centerOut");
-    }
-    if (topOfWindow + windowHeight >= 4700) {
-      $('#ex-img1').addClass("slideRight");
-      $('#ex-desc1').addClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 6000 || topOfWindow + windowHeight <= 4700) {
-      $('#ex-img1').removeClass("slideRight");
-      $('#ex-desc1').removeClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 5150) {
-      $('#ex-img2').addClass("slideLeft");
-      $('#ex-desc2').addClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 6450 || topOfWindow + windowHeight <= 5150) {
-      $('#ex-img2').removeClass("slideLeft");
-      $('#ex-desc2').removeClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 5600) {
-      $('#ex-img3').addClass("slideRight");
-      $('#ex-desc3').addClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 6700 || topOfWindow + windowHeight <= 5600) {
-      $('#ex-img3').removeClass("slideRight");
-      $('#ex-desc3').removeClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 6050) {
-      $('#ex-img4').addClass("slideLeft");
-      $('#ex-desc4').addClass("slideUp");
-    }
-    if (topOfWindow + windowHeight >= 7400 || topOfWindow + windowHeight <= 6050) {
-      $('#ex-img4').removeClass("slideLeft");
-      $('#ex-desc4').removeClass("slideUp");
-    }
-  });
-  $(document).ready(function() {
-    $("#logo").click(function () {
-      $('#post-slideUp').removeClass("slideUp");
-      $('#curve-line-img').removeClass("wipe-right");
-      $('#centerOut').removeClass("centerOut");
-      $('#ex-img1').removeClass("slideRight");
-      $('#ex-desc1').removeClass("slideUp");
-      $('#ex-img2').removeClass("slideLeft");
-      $('#ex-desc2').removeClass("slideUp");
-      $('#ex-img3').removeClass("slideRight");
-      $('#ex-desc3').removeClass("slideUp");
-      $('#ex-img4').removeClass("slideLeft");
-      $('#ex-desc4').removeClass("slideUp");
-    });
-    $("#click-service").click(function() {
-      $('#post-slideUp').addClass("slideUp");
-      $('#curve-line-img').removeClass("wipe-right");
-      $('#centerOut').removeClass("centerOut");
-      $('#ex-img1').removeClass("slideRight");
-      $('#ex-desc1').removeClass("slideUp");
-      $('#ex-img2').removeClass("slideLeft");
-      $('#ex-desc2').removeClass("slideUp");
-      $('#ex-img3').removeClass("slideRight");
-      $('#ex-desc3').removeClass("slideUp");
-      $('#ex-img4').removeClass("slideLeft");
-      $('#ex-desc4').removeClass("slideUp");
-    });
-    $("#click-process").click(function() {
-      $('#post-slideUp').removeClass("slideUp");
-      $('#curve-line-img').addClass("wipe-right");
-      $('#centerOut').removeClass("centerOut");
-      $('#ex-img1').removeClass("slideRight");
-      $('#ex-desc1').removeClass("slideUp");
-      $('#ex-img2').removeClass("slideLeft");
-      $('#ex-desc2').removeClass("slideUp");
-      $('#ex-img3').removeClass("slideRight");
-      $('#ex-desc3').removeClass("slideUp");
-      $('#ex-img4').removeClass("slideLeft");
-      $('#ex-desc4').removeClass("slideUp");
-    });
-    $("#click-effect").click(function() {
-      $('#post-slideUp').removeClass("slideUp");
-      $('#curve-line-img').removeClass("wipe-right");
-      $('#centerOut').addClass("centerOut");
-      $('#ex-img1').removeClass("slideRight");
-      $('#ex-desc1').removeClass("slideUp");
-      $('#ex-img2').removeClass("slideLeft");
-      $('#ex-desc2').removeClass("slideUp");
-      $('#ex-img3').removeClass("slideRight");
-      $('#ex-desc3').removeClass("slideUp");
-      $('#ex-img4').removeClass("slideLeft");
-      $('#ex-desc4').removeClass("slideUp");
-
-    });
-    $("#click-example").click(function() {
-      $('#post-slideUp').removeClass("slideUp");
-      $('#curve-line-img').removeClass("wipe-right");
-      $('#centerOut').removeClass("centerOut");
-      $('#ex-img1').addClass("slideRight");
-      $('#ex-img2').addClass("slideLeft");
-      setTimeout(function() {
-        $('#ex-desc1').addClass("slideUp");
-        $('#ex-desc2').addClass("slideUp");
-      }, 500);
-      $('#ex-img3').removeClass("slideRight");
-      $('#ex-desc3').removeClass("slideUp");
-      $('#ex-img4').removeClass("slideLeft");
-      $('#ex-desc4').removeClass("slideUp");
-    });
-  });
-
-  $(document).ready(function() {
-
-    var $banner = $(".wrap-customer").find("ul");
-    var $clonedLis = $banner.find("li").clone();
-    $banner.append($clonedLis);
-
-    var $bannerWidth = $banner.children().outerWidth();
-    var $bannerHeight = $banner.children().outerHeight();
-    var $length = $banner.children().length;
-    var rollingId;
-
-    rollingId = setInterval(function() { rollingStart(); }, 2000);
-
-    function rollingStart() {
-      $banner.css("width", $bannerWidth * $length + "px");
-      $banner.css("height", $bannerHeight + "px");
-      $banner.animate({left: "-260px"}, 1500, function() {
-        $(this).append("<li>" + $(this).find("li:first").html() + "</li>");
-        $(this).find("li:first").remove();
-        $(this).css("left", 0);
-      });
-    }
-  });
-
-</script>
 </html>

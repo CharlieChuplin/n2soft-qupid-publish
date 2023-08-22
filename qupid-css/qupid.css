@@ -42,7 +42,6 @@ a {text-decoration: none;}
 
 /* main */
 .main-slide {text-align: center; background: url(/qupid-imgs/img-hero.png)no-repeat center/cover; width: 100%; height: 100vh;}
-/* 홈페이지 접속 시 히어로 이미지 상 -> 하 생성 */
 .main-slide .title-group {padding-top: 94px;}
 .main-slide .title-group h2 {font-size: 90px; margin-bottom: 20px; color: #ff0a0a; font-weight: bold;}
 .main-slide .title-group p {font-size: 30px; font-weight: bold; color: #fff;}
@@ -65,14 +64,6 @@ a {text-decoration: none;}
 .post-slide .wrap-service img {margin: 54px 0 24px 0;}
 .post-slide .wrap-service h4 {margin-bottom: 16px;}
 
-.slide-up-animation {
-    opacity: 0;
-    animation-name: slideUp;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
-}
-
 /* 전저문서 서비스 */
 .service-slide {background: #444; text-align: center; padding: 88px 0;}
 .service-slide .wrap-client {width: 25%; justify-content: center}
@@ -91,23 +82,19 @@ a {text-decoration: none;}
 .process-slide .process-item .customer-circle {width:170px; background-color: #101010; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.25); color: #fff; border-radius: 50%; font-weight: bold; font-size: 20px; padding: 72px 0;text-align: center; align-items: center;}
 .process-slide .process-item .curve-line-img {width: 86px; height: 254px; margin: 0 8px;display: flex; flex-wrap: wrap; align-items: center; position: relative; overflow: hidden;}
 .process-slide .process-item .service-process {display: flex; flex-wrap: wrap; height: 420px;}
-.process-slide .process-item .service-process .service-process-block {display: flex; position: relative; z-index: 1; margin-bottom: 80px;}
-.process-slide .process-item .service-process .service-process-block .service-process-circle {height: 170px; width: 170px; background: #ff0a0a; border-radius: 50%; font-size: 20px; color: #fff; font-weight: bold; padding: 72px 0; position: relative}
-.process-slide .process-item .service-process .service-process-block .service-process-circle::after {content: ""; height: 170px; width: 190px; top: 0%; right: -95px; background: #e7e7e7; position: absolute; z-index: -1;}
-.process-slide .process-item .service-process .service-process-block .service-process-first-step {height: 170px; width: 170px; background: #e7e7e7; border-radius: 30%; margin-right: 20px;}
-.process-slide .process-item .service-process .service-process-block .service-process-first-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #fff; z-index: 1; position: relative; z-index: 1;}
-.process-slide .process-item .service-process .service-process-block .service-process-first-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; position: relative; z-index: 1;}
-.process-slide .process-item .service-process .service-process-block .service-process-first-step .step:after {content: ""; height: 170px; width: 170px; background: #e7e7e7; border-radius: 50%; top: 0%; right: -40px; position: absolute; z-index: -1}
-.process-slide .process-item .service-process .service-process-block .service-process-second-step {height: 170px; width: 170px; background: #fff; margin-right: 20px; position: relative;}
-.process-slide .process-item .service-process .service-process-block .service-process-second-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #e7e7e7; z-index: 1}
-.process-slide .process-item .service-process .service-process-block .service-process-second-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; position: relative; z-index: 1;}
-.process-slide .process-item .service-process .service-process-block .service-process-second-step::before {content: ""; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; background: #fff; z-index: -1;}
-.process-slide .process-item .service-process .service-process-block .service-process-step {height: 170px; width: 170px; background: #fff; margin-right: 20px; position: relative;}
-.process-slide .process-item .service-process .service-process-block .service-process-step::before {content: ""; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; background: #fff; z-index: -1;}
-.process-slide .process-item .service-process .service-process-block .service-process-step::after {content: "------"; height: 170px; width: 170px; top: 0%; left: -50%; position: absolute; padding-top: 30px; color: #e7e7e7}
-.process-slide .process-item .service-process .service-process-block .service-process-step .step {font-size: 14px; font-weight: bold; padding: 32px 0 24px 0; color: #e7e7e7; z-index: 1;}
-.process-slide .process-item .service-process .service-process-block .service-process-step .step-desc {font-size: 18px; font-weight: bold; color: #101010; }
-.half-circle {height: 170px; width: 170px; border-radius: 50%; background: #fff; left: 86%; position: absolute; z-index: -1;}
+.process-slide .service-process-block {display: flex; margin-bottom: 80px; height: 170px; align-items: center; position: relative;}
+.process-slide .service-process-block .service-process-circle {background: #ff0a0a; width: 170px; height: 170px ;border-radius: 50%; font-size: 20px; font-weight: bold; position: absolute; z-index: 3;}
+.process-slide .service-process-block .service-process-circle p {color: #fff; line-height: 170px;}
+.process-slide .service-process-block .service-process-first-step {background: #e7e7e7; width: 315px; height: 170px; border-radius: 0 85px 85px 0; font-size: 20px; font-weight: bold; position: absolute; left:85px; z-index: 2;}
+.process-slide .service-process-block .service-process-first-step .step-wrap {width: 170px; height:170px; color: #fff; position: absolute; left:105px; padding: 32px 0 50px 0;}
+.process-slide .service-process-block .service-process-first-step .step-wrap .step {color: #fff; font-size: 14px; font-weight: normal;}
+.process-slide .service-process-block .service-process-first-step .step-wrap .step-desc {padding-top: 24px;}
+.process-slide .service-process-block .service-process-step-wrap {background: #fff; width: 1016px; height: 170px; border-radius: 85px; font-size: 20px; font-weight: bold; left:85px; z-index: 1; display: flex;}
+.process-slide .service-process-block .service-process-step-wrap .step-wrap {width: 170px; height:170px; color: #e7e7e7; margin: 0 10px; left:380px;  position: relative; padding: 32px 0 50px 0;}
+.process-slide .service-process-block .service-process-step-wrap .step-wrap::before {content: ""; border: 1px dashed #e7e7e7; width: 60px; position: absolute; left:150px; margin-top: 7px;}
+.process-slide .service-process-block .service-process-step-wrap .service-process-step:last-child .step-wrap::before {content: none;}
+.process-slide .service-process-block .service-process-step-wrap .step-wrap .step {color: #e7e7e7; font-size: 14px; font-weight: normal;}
+.process-slide .service-process-block .service-process-step-wrap .step-wrap .step-desc {padding-top: 24px;}
 
 /* QUPID 기대효과 */
 .effect-slide {text-align: center; background: url(/qupid-imgs/img-effect.png); padding: 88px 0; height: 921px;}
@@ -157,86 +144,5 @@ a {text-decoration: none;}
 #footer .dept-contact .dept-leader {width: 274px; height: 112px; text-align: left; padding: 16px 32px; background: rgba(255,255,255,0.04); margin-top: 21px;}
 #footer .dept-contact .dept-leader .leader-name {font-weight: bold; padding-bottom: 8px;}
 
-.slideUp{
-    animation-name: slideUp;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-}
-@keyframes slideUp {
-    0% {transform: translateY(20%);}
-    100% {transform: translateY(0%);}
-}
-.slideLeft{
-    animation-name: slideLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-}
-@keyframes slideLeft {
-    0% {transform: translateX(-20%);}
-    100% {transform: translateY(0%);}
-}
-.slideRight{
-    animation-name: slideRight;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-}
-@keyframes slideRight {
-    0% {transform: translateX(20%);}
-    100% {transform: translateY(0%);}
-}
 
-.fadeIn {
-    animation-name: fadeIn;
-    animation-duration: 1.2s;
-    animation-fill-mode: both;
-    animation-delay: 0.8s;
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-.centerOut {
-    animation: centerOut 2s forwards;
-    transform: translateX(0%);
-}
-@keyframes centerOut {
-    0% {
-        clip-path: inset(50% 90%);
-    }
-
-    100% {
-        clip-path: inset(0 0);
-    }
-}
-
-.wipe-left {
-    animation: wipe-left 1s forwards;
-}
-@keyframes wipe-left {
-    0% {
-        clip-path: inset(0% 0% 0% 100%);
-        opacity: 1;
-    }
-    100% {
-        clip-path: inset(0 0);
-        opacity: 1;
-    }
-}
-.wipe-right {
-    animation: wipe-right 1s forwards;
-}
-@keyframes wipe-right {
-    0% {
-        clip-path: inset(0% 100% 0% 0%);
-        opacity: 1;
-    }
-    100% {
-        clip-path: inset(0 0);
-        opacity: 1;
-    }
-}
 

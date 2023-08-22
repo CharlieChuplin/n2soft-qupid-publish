@@ -1,0 +1,113 @@
+.slideUp{
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes slideUp {
+    0% {transform: translateY(50%);}
+    100% {transform: translateY(0%);}
+}
+.slideLeft{
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes slideLeft {
+    0% {transform: translateX(-20%);}
+    100% {transform: translateY(0%);}
+}
+.slideRight{
+    animation-name: slideRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes slideRight {
+    0% {transform: translateX(20%);}
+    100% {transform: translateY(0%);}
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    animation-delay: 0.8s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.centerOut {
+    animation: centerOut 2s forwards;
+    transform: translateX(0%);
+}
+@keyframes centerOut {
+    0% {
+        clip-path: inset(50% 90%);
+    }
+
+    100% {
+        clip-path: inset(0 0);
+    }
+}
+
+.wipeLeft {
+    animation: wipeLeft 1s forwards;
+}
+@keyframes wipeLeft {
+    0% {
+        clip-path: inset(0% 0% 0% 100%);
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0 0);
+        opacity: 1;
+    }
+}
+.wipeRight {
+    animation: wipeRight 1s forwards;
+}
+@keyframes wipeRight {
+    0% {
+        clip-path: inset(0% 100% 0% 0%);
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0 0);
+        opacity: 1;
+    }
+}
+.wipeDown {
+    animation: wipeDown 1s forwards;
+}
+@keyframes wipeDown {
+    0% {
+        clip-path: inset(0% 0% 100% 0%);
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0 0);
+        opacity: 1;
+    }
+}
+.delay05s {
+    animation-delay: 0.5s;
+}
+.delay1s {
+    animation-delay: 1s;
+}
+.delay15s {
+    animation-delay: 1.5s;
+}
+.delay2s {
+    animation-delay: 2s;
+}
+.delay25s {
+    animation-delay: 2.5s;
+}
+.delay3s {
+    animation-delay: 3s;
+}
