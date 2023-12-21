@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Qupid publish.iml" filepath="$PROJECT_DIR$/Qupid publish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/www.qupid.co.kr.iml" filepath="$PROJECT_DIR$/www.qupid.co.kr.iml" />
     </modules>
   </component>
 </project>

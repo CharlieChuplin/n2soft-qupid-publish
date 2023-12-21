@@ -1,37 +1,99 @@
-.slideUp{
+.slideUp {
     animation-name: slideUp;
     animation-duration: 1s;
     animation-timing-function: ease;
 }
+
 @keyframes slideUp {
-    0% {transform: translateY(50%);}
-    100% {transform: translateY(0%);}
+    0% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
-.slideLeft{
+
+.slideUp20 {
+    animation-name: slideUp20;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes slideUp20 {
+    0% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.slideUp2s {
+    animation-name: slideUp20;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes slideUp2s {
+    0% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-43px);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.slideLeft {
     animation-name: slideLeft;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease;
 }
+
 @keyframes slideLeft {
-    0% {transform: translateX(-20%);}
-    100% {transform: translateY(0%);}
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
-.slideRight{
+
+.slideRight {
     animation-name: slideRight;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease;
 }
+
 @keyframes slideRight {
-    0% {transform: translateX(20%);}
-    100% {transform: translateY(0%);}
+    0% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .fadeIn {
     animation-name: fadeIn;
-    animation-duration: 1.2s;
+    animation-duration: 1s;
     animation-fill-mode: both;
-    animation-delay: 0.8s;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -40,10 +102,27 @@
         opacity: 1;
     }
 }
+
 .centerOut {
     animation: centerOut 2s forwards;
     transform: translateX(0%);
 }
+
+@keyframes centerOut {
+    0% {
+        clip-path: inset(50% 90%);
+    }
+
+    100% {
+        clip-path: inset(0 0);
+    }
+}
+
+.centerOut {
+    animation: centerOut 2s forwards;
+    transform: translateX(0%);
+}
+
 @keyframes centerOut {
     0% {
         clip-path: inset(50% 90%);
@@ -57,6 +136,7 @@
 .wipeLeft {
     animation: wipeLeft 1s forwards;
 }
+
 @keyframes wipeLeft {
     0% {
         clip-path: inset(0% 0% 0% 100%);
@@ -67,9 +147,11 @@
         opacity: 1;
     }
 }
+
 .wipeRight {
     animation: wipeRight 1s forwards;
 }
+
 @keyframes wipeRight {
     0% {
         clip-path: inset(0% 100% 0% 0%);
@@ -80,9 +162,11 @@
         opacity: 1;
     }
 }
+
 .wipeDown {
-    animation: wipeDown 2s forwards;
+    animation: wipeDown 0.5s forwards;
 }
+
 @keyframes wipeDown {
     0% {
         clip-path: inset(0% 0% 100% 0%);
@@ -93,30 +177,77 @@
         opacity: 1;
     }
 }
+
+.wipeDownClose {
+    animation: wipeDownClose 0.5s forwards;
+}
+
+@keyframes wipeDownClose {
+    0% {
+        clip-path: inset(0 0);
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0% 0% 100% 0%);
+        opacity: 1;
+    }
+}
+
+.wipeDown2s {
+    animation: wipeDown2s 2s forwards;
+}
+
+@keyframes wipeDown2s {
+    0% {
+        clip-path: inset(0% 0% 100% 0%);
+        opacity: 1;
+    }
+    100% {
+        clip-path: inset(0 0);
+        opacity: 1;
+    }
+}
+
+.delay025s {
+    animation-delay: 0.25s;
+}
+
 .delay05s {
     animation-delay: 0.5s;
 }
+
+.delay075s {
+    animation-delay: 0.75s;
+}
+
 .delay1s {
     animation-delay: 1s;
 }
+
 .delay125s {
     animation-delay: 1.25s;
 }
+
 .delay15s {
     animation-delay: 1.5s;
 }
+
 .delay175s {
     animation-delay: 1.75s;
 }
+
 .delay2s {
     animation-delay: 2s;
 }
+
 .delay225s {
     animation-delay: 2.25s;
 }
+
 .delay25s {
     animation-delay: 2.5s;
 }
+
 .delay3s {
     animation-delay: 3s;
 }

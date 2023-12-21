@@ -1,0 +1,138 @@
+/* cdn pretendard 폰트 import */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* 공통 */
+html body {max-width: 375px; margin: 0px; padding: 0px; font-size: 11px; font-family: Pretendard;}
+
+p {margin: 0; padding: 0; color: #212121;}
+
+/* 컨테이너 설정 */
+.container {padding: 24px;}
+.container2 {padding: 0 24px 0 24px; font-weight: 600; margin-bottom: 8px;}
+.container3 {padding: 0 24px 0 24px; margin-bottom: 2px;}
+.container4 {padding: 0 24px;}
+.container5 {margin-left: 36px; width: calc(100% - 60px); /* 전체 너비에서 숫자의 너비를 빼고 나머지 부분을 차지하도록 설정 */ vertical-align: top;}
+
+/* container4 관련 설정 */
+.container4 h4 {margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #424242;}
+.container4 .notice-item p {width: 8px; margin-right: 5px;}
+.container4 .notice-item .notice-item-content p {width: 314px; margin-bottom: 4px;}
+.container4 .notice-item .notice-item-content label {padding-right: 39px;}
+.container4 .notice-item .notice-item-content input {margin-bottom: 4px;}
+
+/* margin-top 설정 */
+.margin_35 {margin-top: 35px;}
+.margin_24 {margin-top: 24px;}
+.margin_6 {margin-top: 6px;}
+
+/* margin-bottom 설정 */
+.margin_bottom_4 {margin-bottom: 4px !important;} /* 우선적용 */
+
+/******* 헤더 설정 *******/
+/* 이미지 파일 */
+img.yegaram-logo {width: 208px; height: 25px; object-fit: contain; margin-left: 119px;}
+
+/* 제목(안내장) */
+header .container .notice {margin: 16px 0 0 0; font-size: 18px; font-weight: bold;}
+
+/******* 바디 설정 *******/
+/* 흰배경 설정 */
+.white_back_ground {
+    width: 375px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2em 2em 0px 0px;
+    background-color: #fff;
+}
+
+/* 고객명 */
+.white_back_ground .red_name {display: inline; font-size: 12px; font-weight: 600; color: #e4007f;}
+
+/* 홍길동 */
+.white_back_ground .container .hong {font-size: 12px; text-align: left; color: #212121;}
+
+/* 대출금 안내장 */
+.white_back_ground .named {font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #212121;}
+
+/* 기한이익상실 안내장 */
+.white_back_ground .named2 {font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #212121;} 
+
+/* 테이블 설정*/
+.white_back_ground .loan_table {
+    border: solid 1px #eee;
+    margin-bottom: 8px;
+    text-align: left;
+    border-spacing: 0;
+    margin-left: 24px;
+}
+.white_back_ground .loan_table th {
+    font-weight: 600;
+    border: solid 0.5px #eee;
+    background-color: #f5f5f5;
+    width: 148px;
+    padding: 7px;
+    color: #424242;
+}
+.white_back_ground .loan_table td {
+    border: solid 0.5px #eee;
+    width: 148px;
+    padding: 7px;
+}
+
+/* 빨간박스 설정 */
+.white_back_ground .red_frame {
+    width: 311px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 24px 24px;
+    padding: 8px;
+    border-radius: 4px;    /* 테두리 둥글게 설정 */
+    background-color: rgba(235, 87, 87, 0.1);
+}
+
+/* 빨간박스 글씨 설정 */
+.white_back_ground .red_frame_text {flex-grow: 0; font-weight: 500; text-align: left; color: #eb5757;}
+
+/* 회색박스 설정 */
+.white_back_ground .gray_frame {
+    width: 311px;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 24px 8px;
+    padding: 8px;
+    border-radius: 4px;    /* 테두리 둥글게 설정 */
+    background-color: #f5f5f5;
+}
+
+/* 회색박스 글씨 설정 */
+.white_back_ground .gray_frame_text {flex-grow: 0; color: #212121;}
+
+/* 회색박스 크기 설정 */
+.gray_frame_height {height: 91px !important;} /* 우선적용 */
+
+/* 폰트 굵기 600설정 */
+.white_back_ground .font_600 {font-weight: 600;}
+
+/* 구분 / 내용 */
+.white_back_ground .contents {font-size: 12px; font-weight: 600; color: #424242;}
+
+/* 라디오박스 설정 */
+[type="radio"] {accent-color: black; vertical-align: middle; transform: scale(1); margin-right: 4px; /* 크기 조절 */}
+.notice_td label {display: inline-block; vertical-align: middle; font-size: 11px; margin-right: 39px;}
+.yeo { color: #616161;}
+
+/******* 푸터 설정 *******/
+/* 회색박스 설정 */
+footer .gray_box {flex-grow: 0; margin: 22px 0 0; padding: 24px 24px 24px 24px; background-color: #f5f5f5;}
+
+/* flex 컨테이너 설정 */
+.flex_container {display: flex;}
+.flex_container .flex_item1 {flex-grow: 0; font-size: 12px; margin: 0 98px 8px 0; font-weight: 500; color: #212121;}
+.flex_container .flex_item2 {flex-grow: 0; font-size: 12px; font-weight: 500; text-align: right; color: #212121;}

@@ -1,0 +1,147 @@
+* {box-sizing: border-box; margin: 0; padding: 0; color: #101010}
+body {font-family: 'Spoqa Han Sans Neo', 'sans-serif'; color: #101010; font-size: 16px;}
+ul, ol, li {list-style: none;}
+a {text-decoration: none;}
+
+/* common */
+.container {max-width: 1280px; margin: 0 auto;}
+.inline-flex {display: inline-flex;}
+.justify-space-between {display: flex; justify-content: space-between;}
+.justify-center {display: flex; justify-content: center;}
+.align-center {display: flex; align-items: center;}
+
+.service-title {margin-bottom: 80px}
+.service-title .h3-white {font-size: 36px; margin-bottom: 40px; color: #fff; font-weight: bold}
+.service-title .h3-black {font-size: 36px; margin-bottom: 40px; font-weight: bold}
+.service-title h3 span {color: #ff0a0a}
+.service-title .p-black {font-size: 20px;}
+.service-title .p-white {font-size: 20px; color: #fff;}
+.white-box260 {background: #fff; border-radius: 10px; height: 260px; position: relative;}
+.white-box274 {background: #fff; border-radius: 10px; height: 274px; position: relative;}
+.white-box437 {background: #fff; border-radius: 10px; height: 437px; position: relative; width: calc(50% - 10px); margin-top: 20px; padding: 40px;}
+.white-box260.black-chip::after {content: "고객사"; position: absolute; top:-11px; left:50%; transform: translate(-50%); background: #101010; color:#fff; font-size: 14px; text-align: center; border-radius: 10px; padding: 2px 24px;}
+.white-box274.black-chip::after {content: "고객사"; position: absolute; top:-11px; left:50%; transform: translate(-50%); background: #101010; color:#fff; font-size: 14px; text-align: center; border-radius: 10px; padding: 2px 24px;}
+.white-box260.red-chip::after {content: "우체국"; position: absolute; top:-11px; left:50%; transform: translate(-50%); background: #ff0a0a; color:#fff; font-size: 14px; text-align: center; border-radius: 10px; padding: 2px 24px;}
+.white-box274.red-chip::after {content: "우체국"; position: absolute; top:-11px; left:50%; transform: translate(-50%); background: #ff0a0a; color:#fff; font-size: 14px; text-align: center; border-radius: 10px; padding: 2px 24px;}
+
+/* header */
+#header {position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 80px; border-bottom: 1px solid rgba(255,255,255,0.1);}
+#header.scrolled {background: #fff;}
+#header .logo {display: flex; align-items: center; display: block;}
+#header .logo a {cursor: pointer; display: block;}
+#header .logo img {margin-top: 10px;}
+#header.scrolled .nav .gnb a {color: #101010;}
+#header.scrolled .nav .gnb a:hover {color: #F05F40; transition: all 0.3s ease-in;}
+
+.nav {height: 80px; line-height: 80px;}
+.nav .gnb {display: flex; align-items: center; overflow: hidden;}
+.nav .gnb li {margin-left: 48px;}
+.nav .gnb a {display: block; font-size: 14px; font-weight: bold; color: rgba(255, 255, 255, 0.5);}
+.nav .gnb a:hover {color: #fff; transition: all 0.3s ease-in;}
+
+/* main */
+.main-slide {text-align: center; background: url(/qupid-imgs/img-hero.png)no-repeat center/cover; width: 100%; height: 100vh;}
+.main-slide .title-group {padding-top: 94px;}
+.main-slide .title-group h2 {font-size: 90px; margin-bottom: 20px; color: #ff0a0a; font-weight: bold;}
+.main-slide .title-group p {font-size: 30px; font-weight: bold; color: #fff;}
+.main-slide .title-group span {color: #ff0a0a;}
+.main-slide .stick-bar {width: 2px; height: 40px; background: #fff; display: inline-block; margin: 60px 0;}
+.main-slide .text-group {margin-bottom: 40px;}
+.main-slide .text-group .bg-color-text {display: inline-block;  font-size: 19px; font-weight: bold; color: #fff; margin-bottom: 15px; position: relative; z-index: 1;}
+.main-slide .text-group .bg-color-text::before {content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #101010; width: 115%; height: 32px; z-index: -1;}
+.main-slide .text-group p {font-size: 16px; color: #fff; font-weight: normal; line-height: 1.5;}
+.main-slide .electronic-group .box-wrap {background: rgba(255,255,255,0.05); border-radius: 10px;  border: 1px solid #fff; padding: 28px 20px; width: 304px; height: 160px;}
+.main-slide .electronic-group .box-wrap:not(:last-child) {margin-right: 60px;}
+.main-slide .box-wrap .title {font-size: 26px; font-weight: bold; color: #fff; margin-bottom:16px;}
+.main-slide .box-wrap .text {font-size: 16px; font-weight: normal; color: #fff;}
+
+/* 우체국 전자 우편 서비스 */
+.post-slide {text-align: center; background: #fafafa; padding: 88px 0;}
+.post-slide .wrap-client {width: 25%; justify-content: center}
+.post-slide .wrap-post-office {width: calc(75% - 22px);}
+.post-slide .wrap-post-office .wrap-service {width: 33.3%}
+.post-slide .wrap-service img {margin: 54px 0 24px 0;}
+.post-slide .wrap-service h4 {margin-bottom: 16px;}
+
+/* 전저문서 서비스 */
+.service-slide {background: #444; text-align: center; padding: 88px 0;}
+.service-slide .wrap-client {width: 25%; justify-content: center}
+.service-slide .wrap-post-office {width: calc(75% - 22px);}
+.service-slide .wrap-post-office .wrap-service {width: 33.3%}
+.service-slide .wrap-service img {margin: 54px 0 16px 0;}
+.service-slide .wrap-service h4 {font-size: 20px; margin-bottom: 16px;}
+.service-slide .wrap-service p {color:#444; font-size: 16px; margin-bottom: 10px;}
+.service-slide .wrap-service span {background: #f2f2f2; border-radius: 10px; font-size: 16px; margin-bottom: 10px; padding: 2px 24px}
+.service-slide .doc-certificate h4 {font-weight: 500; font-size: 16px; color: #101010; margin: 16px 0 8px 0}
+.service-slide .doc-certificate p {color: #444;}
+
+/* QUPID PROCESS */
+.process-slide {text-align: center; background: #fafafa; padding: 88px 0 88px 0;}
+.process-slide .process-item {display: flex; height: 420px; align-items: center;}
+.process-slide .process-item .customer-circle {width:170px; background-color: #101010; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.25); color: #fff; border-radius: 50%; font-weight: bold; font-size: 20px; padding: 72px 0;text-align: center; align-items: center;}
+.process-slide .process-item .curve-line-img {width: 86px; height: 254px; margin: 0 8px;display: flex; flex-wrap: wrap; align-items: center; position: relative; overflow: hidden;}
+.process-slide .process-item .service-process {display: flex; flex-wrap: wrap; height: 420px;}
+.process-slide .service-process-block {display: flex; margin-bottom: 80px; height: 170px; align-items: center; position: relative;}
+.process-slide .service-process-block .service-process-circle {background: #ff0a0a; width: 170px; height: 170px ;border-radius: 50%; font-size: 20px; font-weight: bold; position: absolute; z-index: 3;}
+.process-slide .service-process-block .service-process-circle p {color: #fff; line-height: 170px;}
+.process-slide .service-process-block .service-process-first-step {background: #e7e7e7; width: 315px; height: 170px; border-radius: 0 85px 85px 0; font-size: 20px; font-weight: bold; position: absolute; left:85px; z-index: 2;}
+.process-slide .service-process-block .service-process-first-step .step-wrap {width: 170px; height:170px; color: #fff; position: absolute; left:105px; padding: 32px 0 50px 0;}
+.process-slide .service-process-block .service-process-first-step .step-wrap .step {color: #fff; font-size: 14px; font-weight: normal;}
+.process-slide .service-process-block .service-process-first-step .step-wrap .step-desc {padding-top: 24px;}
+.process-slide .service-process-block .service-process-step-wrap {background: #fff; width: 1016px; height: 170px; border-radius: 85px; font-size: 20px; font-weight: bold; left:85px; z-index: 1; display: flex;}
+.process-slide .service-process-block .service-process-step-wrap .step-wrap {width: 170px; height:170px; color: #e7e7e7; margin: 0 10px; left:380px;  position: relative; padding: 32px 0 50px 0;}
+.process-slide .service-process-block .service-process-step-wrap .step-wrap::before {content: ""; border: 1px dashed #e7e7e7; width: 60px; position: absolute; left:150px; margin-top: 7px;}
+.process-slide .service-process-block .service-process-step-wrap .service-process-step:last-child .step-wrap::before {content: none;}
+.process-slide .service-process-block .service-process-step-wrap .step-wrap .step {color: #e7e7e7; font-size: 14px; font-weight: normal;}
+.process-slide .service-process-block .service-process-step-wrap .step-wrap .step-desc {padding-top: 24px;}
+
+/* QUPID 기대효과 */
+.effect-slide {text-align: center; background: url(/qupid-imgs/img-effect.png); padding: 88px 0; height: 921px;}
+.effect-slide .effect-box {width: 238px; height: 268px; border-radius: 30px; box-shadow: 1px 4px 12px 0 rgba(0, 0, 0, 0.8); background-color: rgba(255, 255, 255, 0.6); margin: 0 10px;}
+.effect-slide .effect-box h3 {text-align: left; padding: 24px;  font-family: Helvetica; font-size: 70px; font-weight: bold; font-style: oblique; color: #ff0a0a;}
+.effect-slide .effect-box p {text-align: left; padding:0 35px; font-size: 16px; line-height: 20px;}
+.effect-slide .effect-box .p-white {font-size: 16px; font-weight: 500; color: #fff;}
+.effect-slide .effect-box .p-padding22 {padding: 0 22px}
+.effect-slide .effect-box .p-padding58 {padding: 0 57px}
+.effect-slide .effect-result {width: 320px; height: 160px; border-radius: 50%; background: #fff;}
+.effect-slide .effect-circle {width: 320px; height: 160px; border-radius: 50%; background: #fff; margin: 0 51px;}
+.effect-slide .effect-circle p {font-size: 20px; font-weight: bold; padding-top: 55px;}
+
+/* QUPID 주요활용사례 */
+.ex-slide {text-align: center; padding: 88px 0; background: linear-gradient(to right, transparent 398px, rgba(16, 16, 16, 0.05) 398px, rgba(16, 16, 16, 0.05) 399px, transparent 399px, transparent 743px, rgba(16, 16, 16, 0.05) 743px, rgba(16, 16, 16, 0.05) 744px, transparent 744px,transparent 1157px, rgba(16, 16, 16, 0.05) 1157px, rgba(16, 16, 16, 0.05) 1158px, transparent 1158px, transparent 1502px, rgba(16, 16, 16, 0.05) 1502px, rgba(16, 16, 16, 0.05) 1503px, transparent 1503px); }
+.ex-slide .ex-box {display: flex; padding-bottom: 120px;}
+.ex-slide .ex-box .ex-desc {margin: 110px 0 0 128px; text-align: left;}
+.ex-slide .ex-box .ex-desc-reverse {margin: 110px 0 0 40px; text-align: left;}
+.ex-slide .ex-box .img-reverse {margin-left: auto;}
+.ex-slide  h4 {font-size: 24px; font-weight: bold; padding-bottom: 60px}
+
+/* QUPID 주요 고객사 */
+.customer-slide {text-align: center; background: #fafafa; padding: 88px 0;}
+.customer-slide .wrap-customer {position: relative; width: 1280px; height: 64px; margin:0 auto; padding:0; overflow: hidden;}
+.customer-slide ul {position: absolute;}
+.customer-slide li {float: left; width: 232px; height: 62px; margin-left: 24px; background: #fff; padding: 12px 0;}
+
+/* QUPID 고객문의*/
+.inquiry-slide {text-align: center; padding: 88px 0;}
+.inquiry-slide .service-title {margin-bottom: 60px;}
+.inquiry-slide .input-form {display: flex; flex-wrap: wrap; text-align: left}
+.inquiry-slide .input-form .input-item {margin-bottom: 30px;}
+.inquiry-slide .input-form .input-item p {padding-bottom: 10px;}
+.inquiry-slide .input-form .input-item span {color: #ff0a0a}
+.inquiry-slide .input-form .input-item input {width: 630px; height: 50px; padding: 10px; border: solid 1px #e0e0e0; border-radius: 5px;}
+.inquiry-slide .input-form .input-item textarea {padding: 16px; resize: none; width: 1280px; height: 250px; border: solid 1px #e0e0e0;border-radius: 5px;}
+.inquiry-slide button {width: 380px; height: 44px; background: #101010; color: #fff; font-size: 20px; font-weight: bold;}
+.inquiry-slide button:hover {cursor: pointer;}
+
+/* Footer */
+#footer {background: #444; padding: 40px 0 80px 0;}
+#footer img {margin-bottom: 62px;}
+#footer p {color: #bdbdbd; line-height: 24px;}
+#footer span {color: #bdbdbd; font-size: 12px}
+#footer .company-contact {width: 330px; display: flex; justify-content: space-between}
+#footer .dept-contact {width: 870px; justify-content: space-between; display: flex;}
+#footer .dept-contact .dept-leader {width: 274px; height: 112px; text-align: left; padding: 16px 32px; background: rgba(255,255,255,0.04); margin-top: 21px;}
+#footer .dept-contact .dept-leader .leader-name {font-weight: bold; padding-bottom: 8px;}
+
+
+
